@@ -41,7 +41,7 @@ TEMPERATURE=0.7
 
 ## Features
 
-- 🧠 **Two AIs Working Together**: DeepSeek thinks fast, Claude thinks deep
+- 🧠 **Two AIs Working Together**: DeepSeek thinks deep, Claude thinks fast
 - 🔄 **Chain of Thought**: DeepSeek's first take helps Claude give better answers
 - 🛠 **Built with**: 
   - TypeScript for the serious bits
