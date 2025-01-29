@@ -17,4 +17,18 @@ export interface DeepSeekResponse extends OpenAI.Chat.Completions.ChatCompletion
       reasoning?: string;
     }
   }>;
+}
+
+export class ValidationError extends Error {
+    constructor(message: string) {
+        super(message);
+        this.name = 'ValidationError';
+    }
+}
+
+export class ParseError extends Error {
+    constructor(message: string) {
+        super(message);
+        this.name = 'ParseError';
+    }
 } 

@@ -6,12 +6,38 @@ A playful project that chains together two AI models - using DeepSeek-R1's quick
 
 ## Pretty Terminal Output
 
-![Terminal Preview](assets/terminal-preview.png)
-
 - 🎨 **Nice Colors**: Makes the AI responses easy on the eyes
 - 📝 **Clean Layout**: Neat boxes separate different parts of the conversation
 - 🔄 **Loading Spinners**: Watch the AIs think with fancy spinners
 - 💡 **Highlighted Code**: Code snippets that pop
+
+## Quick Start 🚀
+
+```bash
+# Install dependencies
+npm install
+pip install -r requirements.txt
+
+# Set up your API keys
+cp .env.example .env
+# Edit .env with your API keys
+
+# Build TypeScript
+npm run build
+
+# Run the chat
+python main/main.py
+```
+
+## Environment Variables
+
+```env
+OPENROUTER_API_KEY=your_openrouter_key
+ANTHROPIC_API_KEY=your_anthropic_key
+DEBUG_MODE=false
+MAX_TOKENS=2000
+TEMPERATURE=0.7
+```
 
 ## Features
 
@@ -24,13 +50,22 @@ A playful project that chains together two AI models - using DeepSeek-R1's quick
 - 📊 **Compare Responses**: See how the two AIs think differently
 - 🔍 **See the Process**: Watch the AIs reason step by step
 
-## Fun Things to Try
+## New Comparison Features 🔍
 
-- Solve puzzles with two AI helpers
-- Compare how the AIs think differently
-- Test their reasoning abilities
-- See how they handle tricky questions
-- Learn about AI behavior
+- 🤖 **AI vs AI Analysis**: Claude Haiku judges which response is better
+- 📊 **Multi-angle Comparison**: 
+  - Key differences in approach
+  - Strength/weakness breakdown
+  - Fact checking
+  - Comprehensiveness rating
+- ⚡ **Lightning Fast**: Haiku provides analysis in under 2 seconds
+- 🧩 **Transparent Process**: See exactly how responses are evaluated
+
+## Updated Fun Things to Try
+
+- Ask controversial questions and watch the analysis
+- Compare technical vs creative responses
+- Test with "trick questions" to see disagreement
 
 # Contributing to Deep-Claude-R1
 

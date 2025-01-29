@@ -1,0 +1,6 @@
+anthropic>=0.18.0
+python-dotenv>=1.0.0
+termcolor>=2.4.0
+halo>=0.0.31
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.25.0 

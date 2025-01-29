@@ -127,13 +127,17 @@ async function main(): Promise<DeepSeekResult> {
             result.answer = content.trim().split('\n').pop()?.trim() || content.trim();
         }
 
-        // Add final validation with error handling
+        // Add final validation with proper error handling and result usage
         try {
-            const parsedResult = DeepSeekResultSchema.parse(result);
+            const validatedResult = DeepSeekResultSchema.parse(result);
+            result = validatedResult; // Use the validated result
         } catch (validationError) {
             console.error('Validation failed:', validationError);
-            result.answer = content.trim(); // Fallback to raw content
-            result.reasoning = 'Could not parse reasoning from response';
+            // Create a type-safe error result
+            result = {
+                answer: content.trim() || '[Error: Invalid response format]',
+                reasoning: 'Could not parse reasoning from response'
+            };
         }
 
         // Write result to stdout in a way that Python can parse

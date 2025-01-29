@@ -1,6 +1,6 @@
 {
   "name": "deep-claude-r1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "OpenRouter API integration for Deep Claude R1",
   "main": "dist/openrouter.js",
   "type": "module",
@@ -12,7 +12,8 @@
     "openai": "^4.80.0",
     "axios": "^1.6.2",
     "zod": "^3.22.4",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "@anthropic-ai/sdk": "^0.18.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
